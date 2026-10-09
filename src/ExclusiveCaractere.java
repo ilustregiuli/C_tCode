@@ -3,6 +3,9 @@ public class ExclusiveCaractere {
     // Recebe uma atring e verifica se algum caracter se repete na palavra/frase
     public boolean verificaString(String word) {
 
+        if(word.length() > 128) {
+            return false;
+        }
         //Cria um array de booleanos de 128 posicoes, default "false"
         //Cada índice corresponde ao código ASCII de um caracter (char)
         //Coincidentemente, os índices vão de 0 a 127 como a tabela ASCII
