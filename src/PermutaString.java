@@ -29,7 +29,6 @@ public class PermutaString {
 
         // verifica se são iguais
         return um.equals(dois);
-
     }
 
 }
